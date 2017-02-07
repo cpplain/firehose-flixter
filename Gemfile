@@ -55,3 +55,12 @@ gem 'simple_form'
 
 # Use Devise for authentication
 gem 'devise'
+
+# Use CarrierWave for file uploads
+gem 'carrierwave', '~> 1.0'
+
+# Use Figaro for configuration using ENV and YAML
+gem 'figaro'
+
+# Use Fog for CarrierWave communication with AWS
+gem 'fog'
