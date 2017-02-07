@@ -64,3 +64,6 @@ gem 'figaro'
 
 # Use Fog for CarrierWave communication with AWS
 gem 'fog'
+
+# Use MiniMagick for image manipulation
+gem 'mini_magick'
