@@ -67,3 +67,6 @@ gem 'fog'
 
 # Use MiniMagick for image manipulation
 gem 'mini_magick'
+
+# Use Carrierwave AWS for uploads to S3
+gem 'carrierwave-aws'
