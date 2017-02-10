@@ -73,3 +73,6 @@ gem 'carrierwave-aws'
 
 # Use Stripe for payments
 gem 'stripe'
+
+# Use ranked-model to order lessons
+gem 'ranked-model'
