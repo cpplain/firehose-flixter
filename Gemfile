@@ -79,3 +79,6 @@ gem 'ranked-model'
 
 # Use jQuery UI
 gem 'jquery-ui-rails'
+
+# Use Font Awesome
+gem 'font-awesome-rails'
