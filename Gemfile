@@ -70,3 +70,6 @@ gem 'mini_magick'
 
 # Use Carrierwave AWS for uploads to S3
 gem 'carrierwave-aws'
+
+# Use Stripe for payments
+gem 'stripe'
