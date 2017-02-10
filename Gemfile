@@ -76,3 +76,6 @@ gem 'stripe'
 
 # Use ranked-model to order lessons
 gem 'ranked-model'
+
+# Use jQuery UI
+gem 'jquery-ui-rails'
