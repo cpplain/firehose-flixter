@@ -31,13 +31,19 @@
 
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
-  <%= image_tag current_course.image, class: 'img-fluid' %>
-  <%= link_to 'Preview as student…', course_path(current_course), class: 'btn btn-warning float-right' %>
-  <br class=clear />
+  <br />
+  <div class="col-12 col-sm-10 offset-sm-1 text-center">
+    <%= image_tag current_course.image, class: 'img-fluid' %>
+  </div>
+  <br class="clear" />
+  <div class="text-center">
+    <%= link_to 'Preview as student', course_path(current_course), class: 'btn btn-warning' %>
+  </div>
+  <br class="clear" />
 
   <div class="text-center">
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newSectionModal">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newSectionModal">
       New section
     </button>
   </div>
@@ -50,7 +56,7 @@
           <%= section.title %>
         </div>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-lg float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
+        <button type="button" class="btn btn-primary float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
           New lesson
         </button>
 

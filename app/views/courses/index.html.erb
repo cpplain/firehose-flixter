@@ -8,14 +8,17 @@
     <h2 class="text-center">
       <%= link_to course.title, course_path(course) %>
     </h2>
-    <%= image_tag course.image, class: 'img-fluid' %>
+    <br />
+    <div class="col-12 col-sm-10 offset-sm-1 text-center">
+      <%= image_tag course.image, class: 'img-fluid' %>
+    </div>
     <br />
     <div class="row">
-      <div class="col-12 col-sm-8">
+      <div class="col-12 col-sm-7 offset-sm-1">
         <%= course.description %>
       </div>
-      <div class="col-12 col-sm-4 text-center">
-        <%= link_to 'More details…', course_path(course), class: 'btn btn-primary btn-large' %>
+      <div class="col-12 col-sm-3 text-right">
+        <%= link_to 'More details', course_path(course), class: 'btn btn-primary btn-large' %>
       </div>
     </div>
     <br class="clear" />
