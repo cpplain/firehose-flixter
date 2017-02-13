@@ -118,11 +118,12 @@
         </button>
         <h4 class="modal-title" id="newLessonModalLabel">New lesson</h4>
       </div>
-      <%= simple_form_for @lesson, url: '#', html: { id: 'newLessonForm' } do |f| %>
+      <%= simple_form_for @lesson, url: '#', html: { id: 'newLessonForm' }, data: form_authenticity_token do |f| %>
         <div class="modal-body">
             <%= f.input :title %>
             <%= f.input :subtitle %>
             <%= f.input :video %>
+            <%= token_tag %>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
